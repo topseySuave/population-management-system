@@ -8,8 +8,6 @@ class Database {
     let serverUrl;
     if (process.env.NODE_ENV === 'development') {
       serverUrl = `mongodb://${process.env.SERVER}/${process.env.DATABASE_NAME}`;
-    } else if (process.env.NODE_ENV === 'test') {
-      serverUrl = `mongodb://${process.env.SERVER}/${process.env.DATABASE_TEST_NAME}`;
     } else {
       serverUrl = 'mongodb://gabmicah:79xbkut4DvSZy8w@ds233596.mlab.com:33596/output-population';
     }
