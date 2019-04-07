@@ -12,9 +12,10 @@
   },
   "nyc": {
     "exclude": [
-      "server/test/**",
+      "server/tests/**",
       "server/databaseSetup.js",
-      "server/model/**"
+      "server/model/**",
+      "server/index.js"
     ]
   },
   "repository": {

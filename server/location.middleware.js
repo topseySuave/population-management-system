@@ -3,25 +3,25 @@ class LocationMiddleware {
     const {
       maleTotalPopulationCount,
       femaleTotalPopulationCount,
-      name
+      name,
     } = req.body;
 
     if (!maleTotalPopulationCount) {
       return res.status(400).send({
-        message: 'The Number of male resident field is required'
+        message: 'The Number of male resident field is required',
       });
     }
 
     if (!femaleTotalPopulationCount) {
       return res.status(400).send({
-        message: 'The Number of female resident field is required'
+        message: 'The Number of female resident field is required',
       });
     }
 
     if (!name) {
       return res.status(400).send({
-        message: "The Name of location is required"
-      });;
+        message: 'The Name of location is required',
+      });
     }
 
     return next();
@@ -32,30 +32,30 @@ class LocationMiddleware {
       maleTotalPopulationCount,
       femaleTotalPopulationCount,
       subLocationName,
-      parentId
+      parentId,
     } = req.body;
 
     if (!maleTotalPopulationCount) {
       return res.status(400).send({
-        message: 'The Number of male resident field is required'
+        message: 'The Number of male resident field is required',
       });
     }
 
     if (!femaleTotalPopulationCount) {
       return res.status(400).send({
-        message: 'The Number of female resident field is required'
+        message: 'The Number of female resident field is required',
       });
     }
 
     if (!subLocationName) {
       return res.status(400).send({
-        message: "The Name of sublocation is required"
+        message: 'The Name of sublocation is required',
       });
     }
 
     if (!parentId) {
       return res.status(400).send({
-        message: "The apex location id is required"
+        message: 'The parent location id is required',
       });
     }
 
@@ -66,24 +66,24 @@ class LocationMiddleware {
     const {
       maleTotalPopulationCount,
       femaleTotalPopulationCount,
-      subLocationName
+      subLocationName,
     } = req.body;
 
     if (!maleTotalPopulationCount) {
       return res.status(400).send({
-        message: 'The Number of male resident field is required'
+        message: 'The Number of male resident field is required',
       });
     }
 
     if (!femaleTotalPopulationCount) {
       return res.status(400).send({
-        message: 'The Number of female resident field is required'
+        message: 'The Number of female resident field is required',
       });
     }
 
     if (!subLocationName) {
       return res.status(400).send({
-        message: "The Name of sublocation is required"
+        message: 'The Name of sublocation is required',
       });
     }
 
