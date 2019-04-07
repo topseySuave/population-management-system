@@ -6,7 +6,7 @@
 A simple API system for population management. Visit the hosted version [here](https://populationapi-m.herokuapp.com/)
 
 ### API Documentation
-Visit [here](https://documenter.getpostman.com/view/2928491/S1EH21Zo) to see the documentation for this API
+Visit [here](https://documenter.getpostman.com/view/2928491/S1EJYMg3) to see the documentation for this API
 
 ## How To Make it work
 1. Install [`node`](https://nodejs.org/en/download/)
