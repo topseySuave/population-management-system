@@ -19,22 +19,22 @@ const locationsRoute = '/api/v1/locations';
 const subLocationsRoute = `${locationsRoute}/sublocations`;
 
 describe('POPULATION MANAGEMENT API TEST', () => {
-  // before(async () => {
-  //   await mongoose.connection.collections.locations.drop();
-  //   console.log('locations collection dropped');
-  //   const seedLocation = new LocationModel({
-  //     name: 'vikendi',
-  //     subLocations: [{
-  //       maleTotalPopulationCount: 1253,
-  //       femaleTotalPopulationCount: 1243,
-  //       subLocationName: 'castle',
-  //     }],
-  //   });
+  before(async () => {
+    await mongoose.connection.collections.locations.drop();
+    console.log('locations collection dropped');
+    const seedLocation = new LocationModel({
+      name: 'vikendi',
+      subLocations: [{
+        maleTotalPopulationCount: 1253,
+        femaleTotalPopulationCount: 1243,
+        subLocationName: 'castle',
+      }],
+    });
 
-  //   seedLocation.save().then((record) => {
-  //     seed = record;
-  //   });
-  // });
+    seedLocation.save().then((record) => {
+      seed = record;
+    });
+  });
 
   describe('Location post endpoint', () => {
     it('should create a location successfully', async () => {
